@@ -1,6 +1,7 @@
 <template lang="pug">
 div(ok)
   h1(:class="$style.red") hello
+  h2 world
 </template>
 
 <script>
@@ -18,6 +19,13 @@ export default {
   color: red;
 }
 </style>
+
+<style>
+h2 {
+  color: blue;
+}
+</style>
+
 
 <foo>
 export default comp => {
