@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "scripts": {
-    "test": "yarn lint && jest --env node",
+    "test": "node --inspect-brk ./node_modules/.bin/jest --env node ./test/style.spec.js",
     "lint": "eslint lib test --fix",
     "build": "webpack --config example/webpack.config.js --hide-modules",
     "dev": "webpack-dev-server --config example/webpack.config.js --inline --hot",
