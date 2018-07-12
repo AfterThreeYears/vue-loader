@@ -2,15 +2,21 @@
 div(ok)
   h1(:class="$style.red") hello
   h2 world
+  h3 666
+  <ui-test />
 </template>
 
 <script>
+import UiTest from './UITest.vue';
 export default {
   data () {
     return {
       msg: 'fesfff'
     }
-  }
+  },
+  components: {
+    UiTest,
+  },
 }
 </script>
 
@@ -20,9 +26,12 @@ export default {
 }
 </style>
 
-<style>
+<style scoped>
 h2 {
   color: blue;
+}
+h3 {
+  color: yellow;
 }
 </style>
 
